@@ -171,11 +171,11 @@ function saveTasks() {
         tasks.completed.push(task.querySelector('.task-text').textContent);
     });
 
-    localStorage.setItem('kanbanTasks', JSON.stringify(tasks));
+    localStorage.setItem('Tasks', JSON.stringify(tasks));
 }
 
 function loadTasks() {
-    const savedTasks = localStorage.getItem('kanbanTasks');
+    const savedTasks = localStorage.getItem('Tasks');
     if (savedTasks) {
         const tasks = JSON.parse(savedTasks);
 
