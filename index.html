@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Todo List</h1>
+    <div class="main-container">
+        <div class="column todo" ondragover="allowDrop(event)" ondrop="drop(event)" ondragleave="dragLeave(event)">
+            <h3>To Do</h3>
+            <ul class="task-list" id="todo-list"></ul>
+            <div class="task-input-container">
+                <input type="text" class="task-input" placeholder="Add a new task..." id="todo-input">
+                <button class="add-btn" onclick="addTask('todo')">+</button>
+            </div>
+        </div>
+        <div class="column progress" ondragover="allowDrop(event)" ondrop="drop(event)" ondragleave="dragLeave(event)">
+            <h3>In Progress</h3>
+            <ul class="task-list" id="progress-list"></ul>
+            <div class="task-input-container">
+                <input type="text" class="task-input" placeholder="Add in-progress task..." id="progress-input">
+                <button class="add-btn" onclick="addTask('progress')">+</button>
+            </div>
+        </div>
+        <div class="column completed" ondragover="allowDrop(event)" ondrop="drop(event)" ondragleave="dragLeave(event)">
+            <h3>Completed</h3>
+            <ul class="task-list" id="completed-list"></ul>
+            <div class="task-input-container">
+                <input type="text" class="task-input" placeholder="Add completed task..." id="completed-input">
+                <button class="add-btn" onclick="addTask('completed')">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
