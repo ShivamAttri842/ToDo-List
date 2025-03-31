@@ -1,8 +1,6 @@
 # 🚀  Todo List Application
 
-![Project Screenshot]((https://imgur.com/a/UbdinBf))
-
-
+![Project Screenshot](./screenshot.png)
 
 &#x20;
 
